@@ -11,6 +11,8 @@ var port = process.env.PORT || 5000;
 //used by express first
 app.use(express.static('./public'));
 app.use(express.static('./src'));
+app.use(express.static('./sampledata'));
+
 
 
 //templating engine
@@ -26,7 +28,7 @@ app.get('/', function (req, res) {
     });
 });
 
-app.get('/', function (req, res) {
+app.get('/sample', function (req, res) {
 
     res.render('sample', {
         title: 'Population Chart using sample tsv file'

@@ -46,6 +46,9 @@ rect:first-child {
 
 </style>
 <body>
+    <head>
+        <h1>D3 Using Sample json file on disk</h1>
+    </head>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
@@ -83,8 +86,18 @@ var title = svg.append("text")
     .attr("dy", ".71em")
     .text(2000);
 
-d3.json(url, function(error, data) {
+d3.json('../sampledata/populations.json', function(error, pop) {
 
+    var data = [];
+    
+    for (var prop in pop) {
+      if (pop.hasOwnProperty(prop)) { 
+      // or if (Object.prototype.hasOwnProperty.call(obj,prop)) for safety...
+         //console.log("prop: " + prop + " value: " + pop[prop])
+         data.push(pop[prop]);
+      }
+    }   
+    
   // Convert strings to numbers.
   data.forEach(function(d) {
     d.people = +d.people;
