@@ -1,0 +1,22 @@
+{
+  "name": "d3nodeexpressmongoDB",
+  "version": "1.0.0",
+  "description": "visualization using d3 and mongoDB data",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Josiah Solomon",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.7.1",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "mongodb": "^2.1.19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yosiasz/d3-node-express-mongodb"
+  }
+}
