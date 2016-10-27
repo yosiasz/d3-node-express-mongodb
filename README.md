@@ -24,7 +24,7 @@ Make sure you initialize mongoDB before running.
 
 3. Via web console management create a collection named populations
 
-4. Via web console management use sample data provided to seed 'populations' collection
+4. Via web console management ingest the sample data provided to seed 'populations' collection
 
 5. Make sure mongodb can accept remote connections. http://www.mkyong.com/mongodb/mongodb-allow-remote-access/
    If it is just for local dev use just comment out bind_ip AT YOUR OWN RISK
